@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutputActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome back"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/textViewEmailCatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/textViewWelcome"
+        app:layout_constraintStart_toStartOf="@id/textViewWelcome"
+        app:layout_constraintTop_toBottomOf="@id/textViewWelcome"
+        />
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:gravity="center"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toEndOf="@id/textViewEmailCatch"
+        app:layout_constraintStart_toStartOf="@id/textViewEmailCatch"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailCatch"
+        />
+    <TextView
+        android:id="@+id/textViewClickNum"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="80dp"
+        android:text="click button to increase the number.."
+        app:layout_constraintEnd_toEndOf="@id/editTextNumber"
+        app:layout_constraintStart_toStartOf="@id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber"
+        />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/textViewClickNum"
+        app:layout_constraintStart_toStartOf="@id/textViewClickNum"
+        app:layout_constraintTop_toBottomOf="@id/textViewClickNum"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
